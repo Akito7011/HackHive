@@ -5,6 +5,9 @@ import Landing from './Pages/Landing';
 import Hackathons from './Pages/Hackathons';
 import BlogsPage from './Pages/Blog';
 import Custom404 from './Pages/Custom404';
+import SignUp from './Pages/SignUp';
+import ForgotPassword from './Pages/ForgotPassword';
+import ResetPassword from './Pages/ResetPassword';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -39,6 +42,9 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/ForgotPassword" element={<ForgotPassword />} />
+          <Route path="/ResetPassword/:token" element={<ResetPassword />} />
           <Route
             path="/hackathons"
             element={
