@@ -56,7 +56,7 @@ export default function Footer({darkMode}) {
                     <div>
                         <li className="text-[22px] list-none font-semibold text-blue-500  uppercase">
                             Company</li>
-                        <li className="my-4 list-none">About Us</li>
+                        <a href="/aboutus"><li className="my-4 list-none">About Us</li></a>
                         <li className="my-4 list-none">Career</li>
                         <li className="my-4 list-none">Blogs</li>
                         <li className="my-4 list-none">Changelog</li>

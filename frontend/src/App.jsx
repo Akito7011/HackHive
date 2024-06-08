@@ -5,6 +5,7 @@ import Landing from './Pages/Landing';
 import Hackathons from './Pages/Hackathons';
 import BlogsPage from './Pages/Blog';
 import Custom404 from './Pages/Custom404';
+import AboutUs from './Pages/AboutUs';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -49,6 +50,12 @@ function App() {
             path="/blogs"
             element={
               <BlogsPage darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            path="/aboutus"
+            element={
+              <AboutUs darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             }
           />
           <Route path="*" element={<Custom404 />} />
