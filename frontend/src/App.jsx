@@ -5,9 +5,13 @@ import Landing from './Pages/Landing';
 import Hackathons from './Pages/Hackathons';
 import BlogsPage from './Pages/Blog';
 import Custom404 from './Pages/Custom404';
-import SignUp from './Pages/SignUp';
-import ForgotPassword from './Pages/ForgotPassword';
-import ResetPassword from './Pages/ResetPassword';
+//<<<<<<< main
+//import SignUp from './Pages/SignUp';
+//import ForgotPassword from './Pages/ForgotPassword';
+//import ResetPassword from './Pages/ResetPassword';
+=======
+//import AboutUs from './Pages/AboutUs';
+//>>>>>>> main
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -55,6 +59,12 @@ function App() {
             path="/blogs"
             element={
               <BlogsPage darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            path="/aboutus"
+            element={
+              <AboutUs darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             }
           />
           <Route path="*" element={<Custom404 />} />
